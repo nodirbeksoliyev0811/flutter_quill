@@ -373,4 +373,5 @@ See [Contributing](./CONTRIBUTING.md) for more details.
 
 [Sample Page]: https://github.com/singerdmx/flutter-quill/blob/master/example/lib/main.dart
 #   f l u t t e r _ q u i l l  
+ #   f l u t t e r _ q u i l l  
  
