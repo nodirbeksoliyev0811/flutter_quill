@@ -372,6 +372,3 @@ See [Contributing](./CONTRIBUTING.md) for more details.
 [Slack Group]: https://join.slack.com/t/bulletjournal1024/shared_invite/zt-fys7t9hi-ITVU5PGDen1rNRyCjdcQ2g
 
 [Sample Page]: https://github.com/singerdmx/flutter-quill/blob/master/example/lib/main.dart
-#   f l u t t e r _ q u i l l  
- #   f l u t t e r _ q u i l l  
- 
