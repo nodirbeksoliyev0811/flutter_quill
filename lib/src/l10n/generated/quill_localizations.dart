@@ -50,6 +50,7 @@ import 'quill_localizations_tk.dart';
 import 'quill_localizations_tr.dart';
 import 'quill_localizations_uk.dart';
 import 'quill_localizations_ur.dart';
+import 'quill_localizations_uz.dart';
 import 'quill_localizations_vi.dart';
 import 'quill_localizations_zh.dart';
 
@@ -189,6 +190,8 @@ abstract class FlutterQuillLocalizations {
     Locale('tr'),
     Locale('uk'),
     Locale('ur'),
+    Locale('uz'),
+    Locale.fromSubtags(languageCode: 'uz', scriptCode: 'Cyrl'),
     Locale('vi'),
     Locale('zh'),
     Locale('zh', 'CN'),
@@ -890,6 +893,7 @@ class _FlutterQuillLocalizationsDelegate
         'tr',
         'uk',
         'ur',
+        'uz',
         'vi',
         'zh'
       ].contains(locale.languageCode);
@@ -899,6 +903,18 @@ class _FlutterQuillLocalizationsDelegate
 }
 
 FlutterQuillLocalizations lookupFlutterQuillLocalizations(Locale locale) {
+  // Lookup logic when language+script codes are specified.
+  switch (locale.languageCode) {
+    case 'uz':
+      {
+        switch (locale.scriptCode) {
+          case 'Cyrl':
+            return FlutterQuillLocalizationsUzCyrl();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when language+country codes are specified.
   switch (locale.languageCode) {
     case 'en':
@@ -1039,6 +1055,8 @@ FlutterQuillLocalizations lookupFlutterQuillLocalizations(Locale locale) {
       return FlutterQuillLocalizationsUk();
     case 'ur':
       return FlutterQuillLocalizationsUr();
+    case 'uz':
+      return FlutterQuillLocalizationsUz();
     case 'vi':
       return FlutterQuillLocalizationsVi();
     case 'zh':

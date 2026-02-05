@@ -478,6 +478,30 @@
     "saveImagePermissionDenied"
   ],
 
+  "uz": [
+    "insertVideo",
+    "errorUnexpectedSavingImage",
+    "successImageSavedGallery",
+    "successImageSaved",
+    "successImageDownloaded",
+    "openGallery",
+    "openFileLocation",
+    "openFile",
+    "saveImagePermissionDenied"
+  ],
+
+  "uz_Cyrl": [
+    "insertVideo",
+    "errorUnexpectedSavingImage",
+    "successImageSavedGallery",
+    "successImageSaved",
+    "successImageDownloaded",
+    "openGallery",
+    "openFileLocation",
+    "openFile",
+    "saveImagePermissionDenied"
+  ],
+
   "vi": [
     "insertVideo",
     "errorUnexpectedSavingImage",
